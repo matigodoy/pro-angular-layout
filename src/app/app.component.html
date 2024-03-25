@@ -1,4 +1,4 @@
-<tui-root>
+<tui-theme-night *ngIf="night | async"></tui-theme-night>
+<tui-root [tuiMode]="mode">
   <router-outlet />
-  <h1 class="text-3xl font-bold underline">Hello world!</h1>
 </tui-root>
